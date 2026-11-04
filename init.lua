@@ -1,8 +1,13 @@
--- Ergonomic and visual tweaks such as tabstop and line numbers
+-- Load Ergonomic and visual tweaks such as tabstop and line numbers
 require("config.opts")
 
--- Keybinds
-require("config.keybinds")
+-- Load Keybinds
+require("config.keymaps.general")
+require("config.keymaps.lsp")
 
 -- Load plugins 
 require("plugs.theme")
+
+-- Load language configurations
+require("langs.cpp")
+require("langs.python")
